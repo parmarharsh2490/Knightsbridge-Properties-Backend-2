@@ -21,7 +21,7 @@ app.use((req, _res, next) => {
 });
 
 app.get('/', (_: Request, res: Response): void => {
-  res.send('dialoft-ai-backend');
+  res.send('Hello World');
 });
 
 app.get('/health', (_: Request, res: Response) => {
