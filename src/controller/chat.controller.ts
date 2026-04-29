@@ -9,6 +9,7 @@ import { AgentName, RETELL_AGENT_IDS } from '../constants';
 import logger from '../utils/logger';
 
 export const handleListAgents = (_req: Request, res: Response) => {
+  console.log(RETELL_AGENT_IDS);
   return res.status(200).json({ agents: Object.keys(RETELL_AGENT_IDS) });
 };
 
